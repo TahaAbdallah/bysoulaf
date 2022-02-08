@@ -1,0 +1,629 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@font-face {
+    font-family: kepler;
+    src: url(../fonts/KeplerStd.otf);
+}
+
+
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+.row {
+    margin: 0px;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+body::-webkit-scrollbar {
+    width: 11px;
+}
+
+body {
+    scrollbar-width: thin;
+}
+
+body::-webkit-scrollbar-track {
+    background: rgba(129, 116, 83, 0.596);
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #fff;
+    border-radius: 6px;
+}
+
+/* ################################################################################################################################# */
+/* ###### LOGIN PAGE ###### */
+
+.login-page {
+    width: 100%;
+    height: 100vh;
+    background-image: url('../images/By-Sulaf.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.login-overlay {
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.219);
+}
+
+.login-page img {
+    margin-bottom: 15px;
+    width: 310px;
+}
+
+.login-form {
+    background-color: #fff;
+    width: 310px;
+    height: fit-content;
+    border-radius: 7px;
+    padding: 25px 15px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 0px 9px -1px rgba(0, 0, 0, 0.26);
+}
+
+.login-form input {
+    border-radius: 5px;
+    margin-bottom: 15px;
+    border: 1px solid rgba(129, 116, 83);
+}
+
+.login-form input:focus {
+    outline: none;
+}
+
+
+.login-btn {
+    font-family: poppins;
+    color: #fff;
+    background-color: rgb(129, 116, 83);
+    border: none;
+    border-radius: 5px;
+    padding: 5px 0px;
+    margin-top: 10px;
+}
+
+.back-to-web {
+    margin-top: 15px;
+}
+
+.back-to-web i {
+    font-size: 10px;
+    margin-right: 5px;
+    color: #fff;
+}
+
+.back-to-web a {
+    font-family: poppins;
+    color: #fff;
+}
+
+
+/* ################################################################################################################################# */
+/* ###### ADMIN SIDEBAR ###### */
+
+.sidebar::-webkit-scrollbar {
+    width: 5px;
+}
+
+.sidebar {
+    scrollbar-width: thin;
+}
+
+.sidebar::-webkit-scrollbar-track {
+    background: rgba(129, 116, 83, 0.596);
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+    background-color: #fff;
+    border-radius: 6px;
+    border: 1px solid rgb(129, 116, 83);
+}
+
+.sidebar {
+    width: 15%;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    overflow-y: scroll;
+    background-color: rgb(129, 116, 83);
+    padding: 15px;
+}
+
+.sidebar h5 {
+    font-family: poppins;
+    color: #fff;
+}
+
+.sidebar h6 {
+    font-family: poppins;
+    color: #fff;
+    border-bottom: 1px solid white;
+    margin-top: 25px;
+}
+
+.sidebar a {
+    display: block;
+    font-family: poppins;
+    color: #fff;
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+
+.admin-content {
+    width: 85%;
+    margin-left: auto;
+}
+
+.admin-logo-section {
+    background-color: rgb(129, 116, 83);
+}
+
+.admin-logo-section img {
+    width: 100px;
+}
+
+.admin-logout button {
+    color: white;
+    background-color: transparent;
+    border: none;
+}
+
+
+
+/* ################################################################################################################################# */
+/* ###### DASHBOARD PAGE ###### */
+
+.adding-btn {
+    font-family: poppins;
+    color: #fff;
+    background-color: rgb(129, 116, 83);
+    border: none;
+    border-radius: 5px;
+    padding: 5px 15px;
+    transition: 0.7s ease;
+    text-decoration: none;
+    margin-top: auto;
+}
+
+.adding-btn:hover {
+    transform: scale(1.1);
+    transition: 0.7s ease;
+    text-decoration: none;
+    color: #fff;
+}
+
+.admin-page {
+    margin-top: 25px;
+}
+
+.admin-page h3 {
+    font-family: poppins;
+    color: rgb(129, 116, 83);
+}
+
+.table td,
+.table th {
+    border: 1px solid rgb(129, 116, 83) !important;
+    font-family: poppins;
+    color: rgb(129, 116, 83);
+}
+
+
+/* ################################################################################################################################# */
+/* ###### ADDING PAGE ###### */
+
+.adding-form {
+    margin-top: 25px;
+}
+
+.adding-form input {
+    display: block;
+    margin-bottom: 15px;
+    outline: none;
+}
+
+.adding-form input:focus {
+    border: 1px solid rgb(129, 116, 83);
+}
+
+.table img {
+    height: 20vh;
+}
+
+/* ###################################################  LAYOUT  ############################################################################## */
+
+.layout-btn {
+    position: fixed;
+    top: 25px;
+    right: 0;
+    z-index: 999;
+    font-size: 20px;
+    border: 3px solid red;
+    box-shadow: 0px 0px 9px -1px rgb(0, 0, 0);
+
+}
+
+.layout-border {
+    border: 10px solid black;
+}
+
+/* ###### HERO INDEX ###### */
+.hero {
+    width: 100%;
+    height: 100%;
+    background-image: url('../images/By-Sulaf.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: block;
+}
+
+.hero input,
+.hero textarea {
+    color: white;
+    background-color: transparent;
+    border: 2px solid black;
+}
+
+
+.hero-content {
+    padding-top: 140px;
+    margin-left: auto;
+}
+
+.hero-content h3 {
+    color: white;
+    font-family: kepler;
+    font-size: 40px;
+    margin: 0px;
+    text-transform: uppercase;
+}
+
+.hero-content h1 {
+    color: white;
+    font-family: kepler;
+    font-size: 70px;
+    text-transform: uppercase;
+}
+
+.hero-content p {
+    color: white;
+    font-family: poppins;
+    padding-bottom: 15px;
+}
+
+.main-btn {
+    font-family: poppins;
+    color: rgb(129, 116, 83);
+    background-color: white;
+    border-radius: 10px;
+    border: none;
+    padding: 7px 20px;
+    transition: 0.5s ease-out;
+}
+
+.main-btn a {
+    font-family: poppins;
+    color: rgb(129, 116, 83);
+    background-color: white;
+    border-radius: 10px;
+    border: none;
+    padding: 7px 20px;
+    transition: 0.5s ease-out;
+}
+
+.main-btn:hover {
+    background-color: rgb(236, 236, 236);
+    transform: scale(1.1);
+    transition: 0.8s ease;
+    color: rgb(173, 156, 113);
+}
+
+.main-btn a:hover {
+    background-color: rgb(236, 236, 236);
+    transform: scale(1.1);
+    transition: 0.8s ease;
+    color: rgb(173, 156, 113);
+    text-decoration: none;
+}
+
+
+@media(max-width:992px) {
+
+    .hero {
+        height: 100%;
+    }
+
+    .hero-content {
+        padding-top: 60px;
+    }
+
+}
+
+/* ###### STYLE INDEX ###### */
+
+.style-section {
+    width: 100%;
+    margin-top: 15px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.style-section input,
+.style-section textarea {
+    color: rgb(129, 116, 83);
+    background-color: transparent;
+    border: 2px solid black;
+    width: 100%;
+}
+
+.style-section h1 {
+    font-family: kepler;
+    color: rgb(129, 116, 83);
+}
+
+.style-section h6 {
+    font-family: poppins;
+    color: rgb(129, 116, 83);
+}
+
+.style-img-cont img {
+    object-fit: cover;
+    height: 75vh;
+    max-width: 100%;
+}
+
+@media(max-width:992px) {
+    .style-section {
+        margin-top: 25px;
+    }
+}
+
+
+/* ######  FURNITURE PAGE  ###### */
+
+.furniture-cont-page {
+    height: 100%;
+    background-image: url('../images/pattern-flowers.png');
+}
+
+.furniture-cont-page textarea {
+    color: white;
+    background-color: transparent;
+    border: 2px solid black;
+}
+
+.furniture-cont-page h1 {
+    font-family: kepler;
+    color: #fff;
+}
+
+.furniture-cont-page p {
+    font-family: poppins;
+    color: #fff;
+}
+
+.furniture-sm-cont-page {
+    padding-top: 75px;
+}
+
+.card {
+    border: none;
+    background: transparent;
+}
+
+.furniture-page-row2 {
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.furniture-page-row2 h1 {
+    color: rgb(129, 116, 83);
+}
+
+.furniture-page-row2 .row {
+    margin-bottom: 25px;
+    margin-top: 25px;
+}
+
+
+@media(max-width:768px) {
+
+    .furniture-cont-page {
+        height: 100%;
+        padding-bottom: 15px;
+    }
+
+    .furniture-page-cards {
+        margin-bottom: 15px;
+    }
+
+    .furniture-page-row2 .row {
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+
+    .furniture-page-row2 h1 {
+        padding-bottom: 15px;
+    }
+
+}
+
+/* ######  ABOUT PAGE  ###### */
+
+.about-cont {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    height: 100%;
+    background-image: url('../images/pattern-flowers-white.png');
+}
+
+.about-cont textarea {
+    color: rgb(129, 116, 83);
+    background-color: transparent;
+    border: 2px solid black;
+}
+
+.about-cont img {
+    height: 50vh;
+}
+
+.about-cont h1 {
+    font-family: kepler;
+    color: rgb(129, 116, 83);
+}
+
+.about-cont p {
+    font-family: poppins;
+    color: rgb(129, 116, 83);
+}
+
+@media(max-width:992px) {
+
+    .about-cont {
+        padding-top: 30px;
+        padding-bottom: 30px;
+        height: 100%;
+    }
+
+    .about-cont img {
+        height: 50vh;
+        margin-bottom: 15px;
+    }
+
+}
+
+/* ######  HISTORY PAGE  ###### */
+
+.history-cont {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    height: 100%;
+    background-image: url('../images/pattern-flowers-white.png');
+}
+
+.history-cont img {
+    height: 50vh;
+}
+
+.history-cont h1 {
+    font-family: kepler;
+    color: rgb(129, 116, 83);
+}
+
+.history-cont h6 {
+    font-family: poppins;
+    color: rgb(129, 116, 83);
+}
+
+.history-cont p {
+    font-family: poppins;
+    color: rgb(129, 116, 83);
+}
+
+@media(max-width:992px) {
+
+    .history-cont {
+        padding-top: 30px;
+        padding-bottom: 30px;
+        height: 100%;
+    }
+
+    .history-cont input,
+    .history-cont textarea {
+        color: rgb(129, 116, 83);
+        background-color: transparent;
+        border: 2px solid black;
+    }
+
+    .history-cont img {
+        height: 50vh;
+        margin-bottom: 15px;
+    }
+
+}
+
+/* ######  CONTACT PAGE  ###### */
+
+.contact-cont {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    height: 100%;
+    background-image: url('../images/pattern-flowers-white.png');
+    padding-bottom: 50px;
+}
+
+.contact-cont img {
+    height: 50vh;
+}
+
+.contact-cont h1 {
+    font-family: kepler;
+    color: rgb(129, 116, 83);
+}
+
+.contact-cont h5 {
+    font-family: poppins;
+    color: rgb(129, 116, 83);
+}
+
+.contact-cont h6 {
+    font-family: poppins;
+    margin: 0px;
+    margin-top: 10px;
+    margin-bottom: 2px;
+    color: rgb(129, 116, 83);
+}
+
+.contact-cont form {
+    background-color: #fff;
+    box-shadow: 0px 0px 9px -1px rgba(0, 0, 0, 0.089);
+    border-radius: 10px;
+    padding: 15px 10px;
+}
+
+.contact-cont input,
+.contact-cont textarea {
+    border-radius: 5px;
+    border: 1px solid rgb(129, 116, 83);
+    display: block;
+    margin: auto;
+}
+
+.form-btn {
+    font-family: poppins;
+    color: white;
+    background-color: rgb(129, 116, 83);
+    border-radius: 10px;
+    border: none;
+    padding: 7px 20px;
+    transition: 0.5s ease-out;
+    margin-top: 15px;
+}
+
+@media(max-width:992px) {
+
+    .contact-cont {
+        padding-top: 30px;
+        padding-bottom: 30px;
+        height: 100%;
+    }
+
+    .contact-cont img {
+        height: 50vh;
+        margin-bottom: 15px;
+    }
+
+}
