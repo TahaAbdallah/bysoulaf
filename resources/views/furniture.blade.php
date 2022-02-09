@@ -4,33 +4,15 @@
 
 <div class="furniture-cont-page">
     <div class="container text-center furniture-sm-cont-page">
-        <h1>FURNITURE</h1>
-        <p>Design has always been my passion ... I honor and appreciate any out of the box design which always seems to
-            hit
-            a high level of appreciation. Creating a pattern or a curve or even an angled shaped which is unseen and
-            unfamiliar will always stand out. It is all about ideas, organising, exploring and implementing with a neat
-            proper finish and not of all creativity. Creativity is the use of imagination to create something
-            inventiveness.
-            It is a phenomen where by something somehow new and somehow valuable is formed. The created item may be
-            intangible or a physical object. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui assumenda
-            fugit
-            soluta eum vel, nobis rem praesentium nemo nisi deleniti ipsum odit perspiciatis a expedita dolores
-            molestias
-            veniam? Dolorum, voluptas. Eos illo unde ut quisquam. Sint voluptate, alias quibusdam fugit molestiae error
-            suscipit corporis quis ullam unde voluptatum quae provident impedit est officia eveniet consequuntur nostrum
-            ipsa? Nihil, autem. Accusamus. Dolore libero molestias est illum blanditiis eaque maxime sapiente. Magnam
-            quisquam debitis ut ducimus dolorem dolor nemo cupiditate voluptatibus laboriosam amet velit expedita
-            molestiae,
-            assumenda quo nobis, facilis, quasi quod. Quae, delectus officia sed fugit laboriosam voluptatibus eos
-            praesentium rerum harum pariatur ipsam recusandae, nihil sint nostrum rem provident quibusdam aperiam
-            distinctio. Incidunt repellat nobis voluptas. Ipsum qui soluta esse?</p>
+        <h1>Commercial Projects</h1>
+        <p>Here You can find all of our commercial Projects , For any questions go and click on contact us.</p>
     </div>
 
 </div>
 
 <div class="container furniture-page-row2 text-center">
 
-    <h1>All Furnitures</h1>
+    <h1>All Commercial Projects</h1>
 
     @foreach ($products->chunk(4) as $chunked)
 

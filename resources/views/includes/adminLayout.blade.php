@@ -34,9 +34,9 @@
             <a href="{{ route('addAdmin') }}">Add admin</a>
             <a href="{{ route('admin.dashboard') }}">View all admins</a>
 
-            <h6>Furniture</h6>
-            <a href="{{ route('addProduct') }}">Add a product</a>
-            <a href="{{ route('viewProducts') }}">View all products</a>
+            <h6>Commercial Projects</h6>
+            <a href="{{ route('addCommercial') }}">Add a Project</a>
+            <a href="{{ route('viewCommercials') }}">View all Projects</a>
 
             <h6>Portfolio / Clients</h6>
             <a href="{{ route('addClient') }}">Add a client</a>

@@ -4,8 +4,8 @@
 
 <div class="container-fluid">
     <div class="row admin-page justify-content-between">
-        <h3>All Products</h3>
-        <a class="adding-btn" href="{{ route('addProduct') }}">Add product</a>
+        <h3>All Commercial Projects</h3>
+        <a class="adding-btn" href="{{ route('addCommercial') }}">Add Project</a>
     </div>
     <hr>
 
@@ -27,7 +27,7 @@
                     <td scope="row"><img src="{{ asset($product->image ) }}">
                     </td>
                     <td>{{ $product->name }}</td>
-                    <td><a href="{{route('destroyProduct',['id'=>$product->id])}}">Delete Product</a></td>
+                    <td><a href="{{route('destroyCommercial',['id'=>$product->id])}}">Delete Project</a></td>
                 </tr>
                 @endforeach
             </tbody>

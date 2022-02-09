@@ -12,7 +12,9 @@
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
+
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/test.css') }}">
 </head>
 
 <body>
@@ -36,12 +38,12 @@
                                 class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link furniture-desktop" href="/#furniture-section">Furniture</a>
-                        <a class="nav-link furniture-mobile" href="{{ route('furniture') }}">Furniture</a>
+                        <a class="nav-link furniture-desktop" href="/#furniture-section">Commercials</a>
+                        <a class="nav-link furniture-mobile" href="{{ route('commercials') }}">Commercials</a>
                     </li>
                     <li class=" nav-item">
-                        <a class="nav-link portfolio-desktop" href="/#portfolio-section">Portfolio</a>
-                        <a class="nav-link portfolio-mobile" href="{{ route('portfolio') }}">Portfolio</a>
+                        <a class="nav-link portfolio-desktop" href="/#residential-section">Residentials</a>
+                        <a class="nav-link portfolio-mobile" href="{{ route('residentials') }}">Residentials</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="{{ route('about') }}">About</a>
@@ -68,9 +70,6 @@
                                     <div class="dropdown-item">
                                         <a class="nav-link" id="drop-links" href="{{ route('admin.login') }}">Login</a>
                                     </div>
-                                    {{-- <div class="dropdown-item">
-                                        <a class="nav-link" id="drop-links" href="">All</a>
-                                    </div> --}}
 
                                 </div>
                             </div>
@@ -79,7 +78,6 @@
                     <li class="nav-item mobile-login-nav">
                         <a class="nav-link"><i class="fa fa-user" aria-hidden="true"></i></a>
                         <a class="nav-link" href="{{ route('admin.login') }}">Login</a>
-                        {{-- <a class="nav-link" href="">Register</a> --}}
                     </li>
                 </ul>
             </div>
@@ -98,8 +96,8 @@
 
                 <div class="col-6 col-md-3">
                     <a href="{{ route('home') }}">Home</a>
-                    <a href="{{ route('furniture') }}">Furniture</a>
-                    <a href="{{ route('portfolio') }}">Portfolio</a>
+                    <a href="{{ route('commercials') }}">Commercials</a>
+                    <a href="{{ route('residentials') }}">Residential</a>
                     <a href="{{ route('about') }}">About</a>
                     <a href="{{ route('history') }}">History</a>
                     <a href="{{ route('contact') }}">Contact</a>
@@ -126,8 +124,9 @@
 
 
     <!-- Optional JavaScript -->
+    <script src="{{URL::asset('js/slide.js');}}"></script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    <script src=" https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"

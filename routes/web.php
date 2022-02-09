@@ -21,8 +21,8 @@ use App\Http\Controllers;
 Auth::routes();
 
 Route::get('/', [\App\Http\Controllers\HomeController::class, 'index'])->name('home');
-Route::get('/furniture', [\App\Http\Controllers\HomeController::class, 'furniture'])->name('furniture');
-Route::get('/portfolio', [\App\Http\Controllers\HomeController::class, 'portfolio'])->name('portfolio');
+Route::get('/commercials', [\App\Http\Controllers\HomeController::class, 'commercials'])->name('commercials');
+Route::get('/residentials', [\App\Http\Controllers\HomeController::class, 'residentials'])->name('residentials');
 Route::get('/about', [\App\Http\Controllers\HomeController::class, 'about'])->name('about');
 Route::get('/history', [\App\Http\Controllers\HomeController::class, 'history'])->name('history');
 Route::get('/contact', [\App\Http\Controllers\HomeController::class, 'contact'])->name('contact');
@@ -46,17 +46,17 @@ Route::group(['middleware' => 'auth'], function () {
         Route::get('/delete-admin/{id}',  [\App\Http\Controllers\HomeController::class, 'destroyAdmin'])->name('destroyAdmin');
 
         //PRODUCTS ROUTES
-        Route::get('/add-product', [\App\Http\Controllers\HomeController::class, 'addProduct'])->name('addProduct');
-        Route::get('/view-products', [\App\Http\Controllers\HomeController::class, 'viewProducts'])->name('viewProducts');
-        Route::post('/save-product', [\App\Http\Controllers\HomeController::class, 'saveProduct'])->name('saveProduct');
-        Route::get('/delete-product/{id}', [\App\Http\Controllers\HomeController::class, 'destroyProduct'])->name('destroyProduct');
+        Route::get('/add-commercial', [\App\Http\Controllers\HomeController::class, 'addCommercial'])->name('addCommercial');
+        Route::get('/view-commercials', [\App\Http\Controllers\HomeController::class, 'viewCommercials'])->name('viewCommercials');
+        Route::post('/save-commercial', [\App\Http\Controllers\HomeController::class, 'saveCommercial'])->name('saveCommercial');
+        Route::get('/delete-commercial/{id}', [\App\Http\Controllers\HomeController::class, 'destroyCommercial'])->name('destroyCommercial');
 
 
         //CLIENTS ROUTES
-        Route::get('/add-client', [\App\Http\Controllers\HomeController::class, 'addClient'])->name('addClient');
-        Route::get('/view-clients', [\App\Http\Controllers\HomeController::class, 'viewClients'])->name('viewClients');
-        Route::post('/save-client', [\App\Http\Controllers\HomeController::class, 'saveClient'])->name('saveClient');
-        Route::get('/delete-client/{id}', [\App\Http\Controllers\HomeController::class, 'destroyClient'])->name('destroyClient');
+        Route::get('/add-residential', [\App\Http\Controllers\HomeController::class, 'addresidential'])->name('addresidential');
+        Route::get('/view-residentials', [\App\Http\Controllers\HomeController::class, 'viewresidentials'])->name('viewresidentials');
+        Route::post('/save-residential', [\App\Http\Controllers\HomeController::class, 'saveresidential'])->name('saveresidential');
+        Route::get('/delete-residential/{id}', [\App\Http\Controllers\HomeController::class, 'destroyresidential'])->name('destroyresidential');
 
         //MESSAGES ROUTES
         Route::get('/view-messages', [\App\Http\Controllers\HomeController::class, 'viewMessages'])->name('viewMessages');

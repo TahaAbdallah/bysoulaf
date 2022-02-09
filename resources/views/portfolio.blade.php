@@ -6,7 +6,7 @@
 
 <div class="container-fluid text-center portfolio-cont">
 
-    <h1>Our Portfolio</h1>
+    <h1>Our Residential Projects</h1>
 
     <p>BYSOULAF IS A CREATIVE INTERIOR DESIGN COMPANY SPECIALIZING IN GROWING YOUR DESIRES. HERE'S A
         SNAPSHOT OF SOME OF THE WORK FROM OUR DESIGNS WE'RE PROUD OF.</p>

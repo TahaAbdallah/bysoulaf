@@ -39,19 +39,21 @@ class HomeController extends Controller
     {
         $clients = Client::latest()->get();
         $products = Product::latest()->get();
+        $randomClients = Client::inRandomOrder()->limit(6)->get();
         return view('index')
             ->with('clients', $clients)
-            ->with('products', $products);
+            ->with('products', $products)
+            ->with('randomClients', $randomClients);
     }
 
-    public function furniture()
+    public function commercials()
     {
         $products = Product::latest()->get();
         return view('furniture')
             ->with('products', $products);
     }
 
-    public function portfolio()
+    public function residentials()
     {
         $clients = Client::latest()->get();
         return view('portfolio')->with('clients', $clients);
@@ -121,18 +123,18 @@ class HomeController extends Controller
     }
 
 
-    public function addProduct()
+    public function addCommercial()
     {
         return view('admin.addProduct');
     }
 
-    public function viewProducts()
+    public function viewCommercials()
     {
         $products = Product::latest()->get();
         return view('admin.viewProducts')->with('products', $products);
     }
 
-    public function saveProduct(Request $request)
+    public function saveCommercial(Request $request)
     {
         $this->validate($request, [
             'name' => 'required',
@@ -141,19 +143,19 @@ class HomeController extends Controller
 
         $image = $request->image;
         $newimg = time() . $image->getClientOriginalName();
-        $image->move('uploads/products/', $newimg);
+        $image->move('uploads/commercials/', $newimg);
 
         $products = Product::create([
             'name' => $request->name,
-            'image' => 'uploads/products/' . $newimg,
+            'image' => 'uploads/commercials/' . $newimg,
         ]);
 
         $products->save();
 
-        return redirect()->route('viewProducts');
+        return redirect()->route('viewCommercials');
     }
 
-    public function destroyProduct($id)
+    public function destroyCommercial($id)
     {
         $products = Product::find($id);
         $products->delete();
@@ -161,18 +163,18 @@ class HomeController extends Controller
         return redirect()->back();
     }
 
-    public function addClient()
+    public function addResidential()
     {
         return view('admin.addClient');
     }
 
-    public function viewClients()
+    public function viewResidentials()
     {
         $clients = Client::latest()->get();
         return view('admin.viewClients')->with('clients', $clients);
     }
 
-    public function saveClient(Request $request)
+    public function saveResidential(Request $request)
     {
         $this->validate($request, [
             'name' => 'required',
@@ -181,19 +183,19 @@ class HomeController extends Controller
 
         $image = $request->image;
         $newimg = time() . $image->getClientOriginalName();
-        $image->move('uploads/clients/', $newimg);
+        $image->move('uploads/residentials/', $newimg);
 
         $clients = Client::create([
             'name' => $request->name,
-            'image' => 'uploads/clients/' . $newimg,
+            'image' => 'uploads/residentials/' . $newimg,
         ]);
 
         $clients->save();
 
-        return redirect()->route('viewClients');
+        return redirect()->route('viewResidentials');
     }
 
-    public function destroyClient($id)
+    public function destroyResidential($id)
     {
         $clients = Client::find($id);
         $clients->delete();
