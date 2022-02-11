@@ -39,8 +39,8 @@
             <a href="{{ route('viewCommercials') }}">View all Projects</a>
 
             <h6>Portfolio / Clients</h6>
-            <a href="{{ route('addClient') }}">Add a client</a>
-            <a href="{{ route('viewClients') }}">View all clients</a>
+            <a href="{{ route('addresidential') }}">Add a Project</a>
+            <a href="{{ route('viewresidentials') }}">View all Projects</a>
 
             <h6>Messages</h6>
             <a href="{{ route('viewMessages') }}">View all messages</a>
